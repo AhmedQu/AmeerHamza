@@ -237,15 +237,16 @@ p {
   transition-delay: 50ms;
 }
 #hero-slides #slides .slide .link {
-  display: inline-block;
-  background: #0d96f2;
-  padding: 0.5em 1.25em;
-  font-size: 1.33em;
-  opacity: 0;
-  position: absolute;
-  bottom: -2em;
-  pointer-events: none;
-  transition-delay: 25ms;
+    display: inline-block;
+    background: #edfbff;
+    padding: 1em 1em;
+    font-size: 1em;
+    opacity: 0;
+    position: absolute;
+    bottom: -2em;
+    color: #0d96f2;
+    pointer-events: none;
+    transition-delay: 25ms;
 }
 #hero-slides #slides .slide.hover:before, #hero-slides #slides .slide:hover:before {
   opacity: 1;
