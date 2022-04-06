@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+
+    <meta name="author" content="">
+
+    <title>Xsharp</title>
+
+    <!-- Mobile Specific Meta ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- CSS ================================================== -->
+    <!-- Themefisher Icon font -->
+    <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="plugins/lightbox2/dist/css/lightbox.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/fonnt.css">
+    <link rel="stylesheet" href="css/new.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">  -->
+<style>
+    .Testimonial_Section {
+        display: flex;
+        width: 100vw;
+        gap: 10px;
+    }
+
+    .panel {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        border-radius: 12px;
+        cursor: pointer;
+        flex: 1;
+        color: #fff;
+        transition: flex 0.75s ease-in;
+        position: relative;
+    }
+ 
+    .panel .aaa {
+        font-size: 1.2rem; 
+        opacity: 0;
+    }  
+    .panel.active .aaa { 
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+    .panel .bbb {
+        font-size: 1.2rem; 
+        opacity: 1;
+    } 
+    .panel.active .bbb  {
+        opacity: 0;
+        transition: opacity 0.3s ease-in 0.4s;
+    }   
+
+    .panel.active {
+        flex: 5;
+    } 
+
+    @media(max-width: 480px) {
+        .Testimonial_Section {
+            width: 100vw;
+        }
+
+        .panel:nth-of-type(4),
+        .panel:nth-of-type(5) {
+            display: block;
+        }
+    }
+</style>
+</head>
+
+<body id="body">
+
+    <!-- Start Preloader ==================================== -->
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div> 
+    <!-- End Preloader ==================================== -->
+    <!-- Fixed Navigation ==================================== -->
+    <header class="navigation fixed-top">
+        <div class="container-fluid">
+            <!-- main nav -->
+            <nav class="navbar navbar-expand-lg navbar-light" style="padding: 10px 60px;">
+                <!-- logo -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img class="logo-default" src="images/logo.png" style="width: 150%;" alt="logo" />
+                    <img class="logo-white" src="images/logo.png" style="width: 150%;" alt="logo" />
+                </a>
+                <!-- /logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <!-- <li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Homepage
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="index.html">Homepage</a>
+								<a class="dropdown-item" href="onepage-slider.html">Onepage</a>
+								<a class="dropdown-item" href="onepage-text.html">Onepage 2</a>
+							</div>
+						</li> -->
+                        <li class="nav-item ">
+                            <a class="nav-link" href="services.html" style="color: #000;">Our Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="work.html" style="color: #000;">Work</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="about.html" style="color: #000;">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#contact_us_form" style="color: #000;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+
+    <!-- Ahmed -->
+        <section class="flexy_flex-box flexy_page_intro">
+            <div class="flexy-container">
+                <div class="flexy_flex-box flexy_page_intro-container">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div>
+                            <span class="flexy-typography flexy-text_block flexy-text_block-small t-uppercase mt-5 c-black">
+                                Our design process
+                            </span>
+                            <h1 class="flexy-typography flexy-text_block flexy-text_block-big mt-5 mb-5 c-black">
+                                How we deliver <br>great results
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flexy-processes-desktop c-white">
+            <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                <div class="carousel d-flex flex-column w-100">
+                    <div class="d-flex justify-between">
+                        <div class="counter c-black t-uppercase font-heavy">Stage 1 of 7</div>
+                    </div>
+                    <div class="drag-icon">
+                        <button type="button" aria-label="previous" class="buttonBack___1mlaL carousel__back-button" disabled="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="92" viewBox="0 0 46 92" fill="none">
+                                <path d="M46 91C21.1472 91 1 70.8528 1 46C1 21.1472 21.1472 1 46 1" stroke="white"></path>
+                                <path d="M23 46H46" stroke="white"></path>
+                                <path d="M30 53L23 46L30 39" stroke="white"></path>
+                            </svg>
+                        </button>
+                        <button type="button" aria-label="next" class="buttonNext___2mOCa carousel__next-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="92" viewBox="0 0 46 92" fill="none">
+                                <path d="M-7.86805e-06 1C24.8528 1 45 21.1472 45 46C45 70.8528 24.8528 91 0 91" stroke="white"> </path>
+                                <path d="M23 46L0 46" stroke="white"></path>
+                                <path d="M16 39L23 46L16 53" stroke="white"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal" aria-live="polite" aria-label="slider" tabindex="0" role="listbox">
+                        <div class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal">
+                            <div class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal" style="display: flex; align-items: stretch; width: 700%; transform: translateX(0%) translateX(0px); flex-direction: row;">
+                                <div tabindex="0" aria-selected="true" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible" data-index="0" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;">
+                                        <div class="flexy-process-slide flexy-process-slide-overlay">
+                                            <div class="d-flex info justify-between">
+                                                <div class="d-flex">
+                                                    <div class="process-explanation">
+                                                        <div class="title font-bold mb-1">Kick-off</div>
+                                                        <div class="description">
+                                                            A project kickoff introduces the team to the
+                                                            client’s project, its goals, purposes, and sets of tasks to
+                                                            complete.
+                                                        </div>
+                                                    </div>
+                                                    <div class="outputs">
+                                                        <div class="title font-bold mb-5">Outputs include</div>
+                                                        <ul class="description">
+                                                            <li class="mb-1">Getting to know the client</li>
+                                                            <li class="mb-1">Project introduction</li>
+                                                            <li class="mb-1">Goals and expectations</li>
+                                                            <li class="mb-1">Work specifics and details</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="image w-100">
+                                                    <img src="images/Icons/kick+off.png" alt="Kick-off" class="w-100 h-100" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" data-index="1" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;"></div>
+                                </div>
+                                <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" data-index="2" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;"></div>
+                                </div>
+                                <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" data-index="3" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;"></div>
+                                </div>
+                                <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" data-index="4" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;"></div>
+                                </div>
+                                <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" data-index="5" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;"></div>
+                                </div>
+                                <div tabindex="-1" aria-selected="false" aria-label="slide" role="option" class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden" data-index="6" style="width: 14.2857%; padding-bottom: unset; height: unset;">
+                                    <div class="slideInner___2mfX9 carousel__inner-slide" style="position: unset;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexy-process-slide">
+                        <div class="d-flex info justify-between">
+                            <div class="d-flex">
+                                <div class="process-explanation">
+                                    <div class="title font-bold mb-1">Kick-off</div>
+                                    <div class="description">
+                                        Web Design
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It has survived not only five centuries,
+                                    </div>
+                                </div>
+                                <div class="outputs">
+                                    <div class="title font-bold mb-5">Outputs include</div>
+                                    <ul class="description">
+                                        <li class="mb-1">Getting to know the client</li>
+                                        <li class="mb-1">Project introduction</li>
+                                        <li class="mb-1">Goals and expectations</li>
+                                        <li class="mb-1">Work specifics and details</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="image w-100">
+                                <img src="https://flex-global.s3.eu-west-2.amazonaws.com/assets/processes/lg/kick+off.png" alt="Kick-off" class="w-100 h-100" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnails-wrapper">
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--0 carousel__dot--selected mr-5" data-index="0" disabled="">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 1</span>
+                                <span class="d-block font-bold c-white stage-name">Kick-off</span>
+                                <span class="image">
+                                    <img src="images/Icons/kick+off.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--1 mr-5" data-index="1">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 2</span>
+                                <span class="d-block font-bold c-white stage-name">Research</span>
+                                <span class="image">
+                                    <img src="images/Icons/research.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--2 mr-5" data-index="2">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 3</span>
+                                <span class="d-block font-bold c-white stage-name">Ideation</span>
+                                <span class="image">
+                                    <img src="images/Icons/ideation.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--3 mr-5" data-index="3">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 4</span>
+                                <span class="d-block font-bold c-white stage-name">Testing &amp; validation</span>
+                                <span class="image">
+                                    <img src="images/Icons/test.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--4 mr-5" data-index="4">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 5</span>
+                                <span class="d-block font-bold c-white stage-name">Design</span>
+                                <span class="image">
+                                    <img src="images/Icons/design.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--5 mr-5" data-index="5">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 6</span>
+                                <span class="d-block font-bold c-white stage-name">Implement</span>
+                                <span class="image">
+                                    <img src="images/Icons/implement.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                            <button aria-label="slide dot" type="button" class="dot___3c3SI carousel__dot carousel__dot--6 mr-5" data-index="6">
+                                <span class="d-block font-heavy mb-1 c-white stage-num">STAGE 7</span>
+                                <span class="d-block font-bold c-white stage-name">Improve</span>
+                                <span class="image">
+                                    <img src="images/Icons/improve.png" alt="image" class="w-100 h-100" loading="lazy">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer">Stages can be changed. We are Fighter</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="flexy_flex-box flexy_services_demos flex-column">
+            <div class="flexy-container">
+                <span class="flexy-typography flexy-text_block flexy-text_block-small t-uppercase mt-5 c-black">
+                    Our Services
+                </span>
+                <h2 class="flexy-typography flexy-text_block flexy-text_block-big mt-5 mb-5 c-black">
+                    We take pride in <br> designing extraordinary <br> products for you
+                </h2>
+                <p class="flexy-typography flexy-text_block flexy-text_block-middle mt-5 c-black flexy_page_intro-description">
+                    With our honest approach, we wish to create a trustworthy environment, <br> where our promises towards the clients are always kept
+                </p>
+            </div>
+            <div class="flexy_flex-box flexy_services_demos-container flex-column justify-center h-100 w-100" id="web">
+                <div class="flexy-container">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="d-flex justify-between flexy_services_demos-item">
+                            <div class="flexy_services_demos-image-wrapper">
+                                <img src="images/Icons/web.png" alt="image" class="flexy_services_demos-image">
+                            </div>
+                            <div class="flexy_services_demos-title-wrapper">
+                                <h3 class="flexy_services_demos-title font-bold mb-5">Web Design</h3>
+                                <p class="flexy_services_demos-description font-regular">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                CRM Redesign
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Research • Workshops • Prototyping • UI/UX design
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper"> 
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Rockserve
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Research • Workshops • UI/UX design
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Meditation Landing
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Research • UI/UX design
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Foody
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Research • Workshops • Prototyping • UI/UX design
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy_flex-box flexy_services_demos-container flex-column justify-center h-100 w-100" id="mobile">
+                <div class="flexy-container">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="d-flex justify-between flexy_services_demos-item">
+                            <div class="flexy_services_demos-image-wrapper">
+                                <img src="images/Icons/app.png" alt="image" class="flexy_services_demos-image">
+                            </div>
+                            <div class="flexy_services_demos-title-wrapper">
+                                <h3 class="flexy_services_demos-title font-bold mb-5">
+                                    Mobile Design
+                                </h3>
+                                <p class="flexy_services_demos-description font-regular">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Boxing &amp; Fitness app
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Research • UI/UX design • Motion
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Running app concept
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Research • Prototyping • UI/UX design • Motion
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy_flex-box flexy_services_demos-container flex-column justify-center h-100 w-100" id="develop">
+                <div class="flexy-container">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="d-flex justify-between flexy_services_demos-item">
+                            <div class="flexy_services_demos-image-wrapper">
+                                <img src="images/Icons/dev.png" alt="image" class="flexy_services_demos-image">
+                            </div>
+                            <div class="flexy_services_demos-title-wrapper">
+                                <h3 class="flexy_services_demos-title font-bold mb-5">
+                                    Development
+                                </h3>
+                                <p class="flexy_services_demos-description font-regular">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                My Water App - iOS
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                UI/UX design • Motion • Development
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Stories App - iOS
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                UI/UX design • Graphic Design • Development
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy_flex-box flexy_services_demos-container flex-column justify-center h-100 w-100" id="brand">
+                <div class="flexy-container">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="d-flex justify-between flexy_services_demos-item">
+                            <div class="flexy_services_demos-image-wrapper">
+                                <img src="images/Icons/brand.png" alt="image" class="flexy_services_demos-image">
+                            </div>
+                            <div class="flexy_services_demos-title-wrapper">
+                                <h3 class="flexy_services_demos-title font-bold mb-5">
+                                    Branding
+                                </h3>
+                                <p class="flexy_services_demos-description font-regular">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Hirebee branding
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Logo • Branding
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy_flex-box flexy_services_demos-container flex-column justify-center h-100 w-100" id="motion">
+                <div class="flexy-container">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="d-flex justify-between flexy_services_demos-item">
+                            <div class="flexy_services_demos-image-wrapper">
+                                <img src="images/Icons/motion.png" alt="image" class="flexy_services_demos-image">
+                            </div>
+                            <div class="flexy_services_demos-title-wrapper">
+                                <h3 class="flexy_services_demos-title font-bold mb-5">
+                                    Motion
+                                </h3>
+                                <p class="flexy_services_demos-description font-regular">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                My Water - Demo
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Motion
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                            <!-- <video class="w-100 h-100 flexy_service_project-image" loop="" playsinline="" autoplay="" src="https://flex-global.s3.eu-west-2.amazonaws.com/assets/my_water.mp4" preload="none"></video> -->
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                                <hr class="flexy_service_project-separator mt-5 mb-5">
+                                <a href="javascript:">
+                                    <span class="flexy_service_project d-flex justify-between">
+                                        <span class="d-block flexy_service_project-main-info">
+                                            <h3 class="flexy-typography flexy_service_project-name text-dont-break t-uppercase font-heavy">
+                                                Running App - Promo
+                                            </h3>
+                                            <span class="d-block flexy_service_project-tags font-regular">
+                                                Motion
+                                            </span>
+                                        </span>
+                                        <span class="d-block flexy_service_project-image-wrapper">
+                                            <img src="images/Projects/1.jpg" alt="image" class="flexy_service_project-image" loading="lazy">
+                                        </span>
+                                        <span class="d-flex justify-between flexy_service_project-icons"> 
+                                            <svg width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-next">
+                                                <path d="M0 19H40" stroke="black"></path>
+                                                <path d="M23 37L40 19L23 1" stroke="black"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Ahmed -->
+
+    <section class="flexy_flex-box flexy-contact_us" id="contact-us">
+        <div class="flexy_flex-box flexy-contact_us-container ">
+            <div class="flexy-container">
+                <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                    <span class="flexy-typography flexy-text_block flexy-text_block-small t-uppercase c-black max-w-100">contact us</span>
+                </div>
+            </div>
+            <div class="flexy-container">
+                <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                    <h3 class="flexy-typography flexy-text_block flexy-text_block-big mt-5 c-black">2 ways to work with us</h3>
+                </div>
+            </div>
+            <div class="flexy-container">
+                <div class="flexy_flex-box flexy-contact_us-work_block">
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="flexy_flex-box flex-1 flexy-contact_us-work_block-item">
+                            <div class="flexy_flex-box flexy-card">
+                                <div class="flexy_flex-box flexy-card-header t-uppercase">
+                                    <h2 class="flexy-typography">Design Subscription</h2>
+                                </div>
+                                <div class="flexy_flex-box flexy-card-body mt-5 ">
+                                    <h3 class="flexy-typography">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen
+                                        book. It has survived not only five
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                        <div class="flexy_flex-box flex-1 flexy-contact_us-work_block-item ">
+                            <div class="flexy_flex-box flexy-card ">
+                                <div class="flexy_flex-box flexy-card-header t-uppercase ">
+                                    <h2 class="flexy-typography">Project Based</h2>
+                                </div>
+                                <div class="flexy_flex-box flexy-card-body mt-5 ">
+                                    <h3 class="flexy-typography">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen
+                                        book. It has survived not only five
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-container">
+                <div class="d-flex clutch-reviews">
+                    <div class="presentation c-white">
+                        <div class="headline font-bold">7 out of 10 clients <br> return with new projects!</div>
+                        <hr class="headline-strike">
+                        <a class="download-btn" href="javascript:" target="_blank" download="flexy-presentation" aria-label="download pdf" rel="noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 60 60"
+                                fill="none">
+                                <path d="M30 57L30 0" stroke="white" stroke-width="4"></path>
+                                <path d="M54 33L30 57L6 33" stroke="white" stroke-width="4"></path>
+                            </svg>
+                            <span>presentation .pdf</span>
+                        </a>
+                    </div>
+                    <div class="widget d-flex">
+                        <!-- <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="50" data-darkbg="1" data-clutchcompany-id="1595342">
+                            <iframe id="iframe-0.8209664346267413" width="100%" src="https://widget.clutch.co/widgets/get/2/darkbg?ref_domain=flexy.global&amp;uid=1595342&amp;ref_path=/"
+                                height="50px" style="border: none; display: block;" title="__ym__promise_346810708_408779582 Dark"></iframe>
+                        </div> -->
+                        <img src="images/Icons/star.png" alt="star" class="big-star">
+                        <img src="images/Icons/star.png" alt="star" class="small-star">
+                    </div>
+                </div>
+            </div>
+            <div class="flexy_on_scroll_show animate__animated animate__fadeIn">
+                <div class="flexy_flex-box flexy-contact_us-bg_y " id="contact_us_form">
+                    <div class="flexy-container">
+                        <div class="flexy_flex-box flexy-contact_us-form_block ">
+                            <div class="flexy_flex-box" style="width:100%;position:relative">
+                                <div class="flexy_flex-box flexy-contact_us-block_item flexy-contact_us-block_item-images">
+                                    <img src="images/Icons/icn-work-with-us.png" alt="work with us" class="flexy-contact_us-form_block-contact-us object-contain rotating" loading="lazy">
+                                    <img src="images/Icons/email.png" alt="email us" class="flexy-contact_us-form_block-email object-contain w-100" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="flexy_flex-box flex-column " style="width:100%;position:relative">
+                                <h2 class="flexy-typography flexy-text_block flexy-text_block-big c-black">Get in touch!</h2>
+                                <a href="javascript:" class="email">ahmed.etrendz@gmail.com</a>
+                                <p class="book-copy">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s
+                                </p>
+                                <div>
+                                    <a href="javascript:" target="_blank" rel="noopener noreferrer" class="animate__animated book-btn font-regular">
+                                        Book a meeting
+                                    </a>
+                                    <svg width="33" height="40" viewBox="0 0 33 40" fill="none">
+                                        <path d="M31.2168 1.07C31.1781 0.79658 31.3684 0.543585 31.6418 0.504923C31.9152 0.466262 32.1682 0.656573 32.2069 0.929995L31.2168 1.07ZM0.618359 36.1953C0.439954 35.9845 0.466195 35.669 0.676971 35.4906L4.11175 32.5833C4.32253 32.4049 4.63802 32.4311 4.81643 32.6419C4.99483 32.8527 4.96859 33.1682 4.75782 33.3466L1.70467 35.9308L4.28892 38.984C4.46733 39.1948 4.44109 39.5102 4.23031 39.6887C4.01954 39.8671 3.70404 39.8408 3.52564 39.63L0.618359 36.1953ZM32.2069 0.929995C33.224 8.1229 31.6422 17.4769 26.6964 24.7911C21.7307 32.1346 13.3818 37.4038 0.958557 36.3705L1.04145 35.3739C13.0855 36.3757 21.0939 31.291 25.868 24.2309C30.662 17.1413 32.2025 8.04164 31.2168 1.07L32.2069 0.929995Z" fill="black"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <footer class="flexy_flex-box" style="z-index:5;background-color:#def7ff;position:relative">
+        <div class="flexy-container">
+            <div class="flexy_flex-box flexy-footer">
+                <div class="flexy_flex-box flexy-footer-company_info ">
+                    <svg width="28" height="28" viewBox="0 0 25 25">
+                        <path fill-rule="evenodd" d="M0 13.004l3.522.521c4.114.609 7.344 3.84 7.953 7.953l.52 3.522H10C4.477 25 0 20.523 0 15v-1.996zm25 0V15c0 5.523-4.477 10-10 10h-1.996l.521-3.522c.595-4.022 3.697-7.2 7.68-7.908l.273-.045L25 13.004zM11.995 0l-.52 3.522c-.609 4.114-3.84 7.344-7.953 7.953L0 11.995V10C0 4.477 4.477 0 10 0h1.995zM15 0c5.523 0 10 4.477 10 10v1.995l-3.522-.52c-4.022-.595-7.2-3.697-7.908-7.68l-.045-.273L13.004 0H15z"></path>
+                    </svg>
+                    <p class="flexy-typography copyright">© X-Sharp PVT(LTD) 2022</p>
+                </div>
+                <div class="flexy_flex-box justify-end mb-2 flexy-footer-social_links">
+                    <a href="javascript:" target="_blank" rel="noreferrer noopener">
+                        <p class="flexy-typography flexy-footer-social_links-item t-uppercase">Medium</p>
+                    </a>
+                    <a href="javascript:" target="_blank" rel="noreferrer noopener">
+                        <p class="flexy-typography flexy-footer-social_links-item t-uppercase">facebook</p>
+                    </a>
+                    <a href="javascript:" target="_blank" rel="noreferrer noopener">
+                        <p class="flexy-typography flexy-footer-social_links-item t-uppercase">Dribbble</p>
+                    </a>
+                    <a href="javascript:" target="_blank" rel="noreferrer noopener">
+                        <p class="flexy-typography flexy-footer-social_links-item t-uppercase">Behance</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <footer id="footer" class="bg-one">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <h3>about</h3>
+                        <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus
+                            cursus commodo, tortor mauris sed posuere.</p>
+                    </div> 
+
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <ul>
+                            <li>
+                                <h3>Our Services</h3>
+                            </li>
+                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                        </ul>
+                    </div> 
+
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <ul>
+                            <li>
+                                <h3>Quick Links</h3>
+                            </li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Badges</a></li>
+                        </ul>
+                    </div> 
+
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <ul>
+                            <li>
+                                <h3>Connect with us Socially</h3>
+                            </li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                        </ul>
+                    </div> 
+
+                </div>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <h5>Copyright 2016. All rights reserved.</h5>
+            <h6>Design and Developed by <a href="">Themefisher</a></h6>
+        </div>
+    </footer> -->
+    <!-- end footer -->
+
+
+    <!-- end Footer Area ========================================== --> 
+    <!-- Essential Scripts =====================================-->
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  -->
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script>
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+
+    <!-- Bootstrap4 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
+    <!-- lightbox -->
+    <script src="plugins/lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+ 
+    <script>
+        let hero = document.getElementById('hero-slides');
+        let menu = document.getElementById('menu');
+        let slides = document.getElementById('slides');
+        let dribbble = document.getElementById('dribbble');
+        let next = ['next', 'next-catch'].map(n => document.getElementById(n));
+        let prev = ['prev', 'prev-catch'].map(n => document.getElementById(n));
+        let slideChildren = slides.children;
+        let slideCount = slides.children.length;
+        let currentlyDemoing = false;
+        let currentPage = 0;
+        let slidesPerPage = () => window.innerWidth > 1700 ? 4 : window.innerWidth > 1200 ? 3 : 2;
+        let maxPageCount = () => slideCount / slidesPerPage() - 1;
+
+        function goToPage(pageNumber = 0) {
+            currentPage = Math.min(maxPageCount(), Math.max(0, pageNumber));
+            console.log(currentPage);
+            hero.style.setProperty('--page', currentPage);
+        }
+
+        function sleep(time) {
+            return new Promise(res => setTimeout(res, time));
+        }
+
+        function hoverSlide(index) {
+            index in slideChildren &&
+                slideChildren[index].classList.add('hover');
+        }
+
+        function unhoverSlide(index) {
+            index in slideChildren &&
+                slideChildren[index].classList.remove('hover');
+        }
+
+        async function demo() {
+            if (currentlyDemoing) {
+                return;
+            }
+            currentlyDemoing = true;
+            if (currentPage !== 0) {
+                goToPage(0);
+                await sleep(800);
+            }
+
+            let slides = slidesPerPage();
+            let pageSeq_ = { 2: [1, 2, 1], 3: [1, 2, 1 / 3], 4: [1, 1, 0] };
+            let pageSeq = pageSeq_[slides] || pageSeq_[4];
+            let slideSeq_ = { 2: [2, 4, 3], 3: [3, 6, 2], 4: [3, 6, 2] };
+            let slideSeq = slideSeq_[slides] || slideSeq_[2];
+
+            await sleep(300);
+            goToPage(pageSeq[0]);
+            await sleep(500);
+            hoverSlide(slideSeq[0]);
+            await sleep(1200);
+            goToPage(pageSeq[1]);
+            dribbble.classList.add('hover');
+            unhoverSlide(slideSeq[0]);
+            await sleep(500);
+            hoverSlide(slideSeq[1]);
+            await sleep(1200);
+            goToPage(pageSeq[2]);
+            unhoverSlide(slideSeq[1]);
+            await sleep(300);
+            hoverSlide(slideSeq[2]);
+            await sleep(1600);
+            goToPage(0);
+            unhoverSlide(slideSeq[2]);
+            dribbble.classList.remove('hover');
+            currentlyDemoing = false;
+        }
+
+        next.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage + 1)));
+        prev.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage - 1)));
+        menu.addEventListener('click', demo);
+
+        sleep(100).then(demo); 
+
+    </script> 
+
+    <!-- NewJs -->
+    <script src="NewJs/app.js"></script>
+    <script src="NewJs/index.js"></script>
+    <script src="NewJs/webpack-d816c352100341d1416f.js" async=""></script>
+    <script src="NewJs/framework.43cbeed354592ace3e96.js" async=""></script>
+    <script src="NewJs/commons.c2e7b864cd5f7c77da15.js" async=""></script>
+    <script src="NewJs/572c4d1ea81c0b8df3a7dcf78412451952aa572c_CSS.ae226c74e10a6a4b10b8.js" async=""></script>
+    <script src="NewJs/styles.2ee7622d878cf98d141b.js" async=""></script>
+    <script src="NewJs/main-d24641ed01c6ac866021.js" async=""></script>
+    <script src="NewJs/d763470148cc950efb234a2c151609867ef171e6.748e04bd8ab7c6599c02.js" async=""></script>
+    <script src="NewJs/506b9737ad6f264ba63dbdd205530fb7271616c5.1a141443fe5dc7c0e6bc.js" async=""></script>
+    <!-- NewJs -->
+</body>
+
+</html>
