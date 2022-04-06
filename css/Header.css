@@ -1579,13 +1579,13 @@
 
 @media (max-width: 1024px) {
     .flexy_goal-motivation-container {
-        background-image: url("../../../../flex-global.s3.eu-west-2.amazonaws.com/assets/goal_bg_sm.png");
+        background-image: url("../images/goal_bg_sm.png");
     }
 }
 
 @media (min-width: 1024px) {
     .flexy_goal-motivation-container {
-        background-image: url("../../../../flex-global.s3.eu-west-2.amazonaws.com/assets/goal_bg_lg.png");
+        background-image: url("../images/goal_bg_lg.png");
     }
 }
 
